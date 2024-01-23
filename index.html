@@ -11,6 +11,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="js/all.min.css">
+  <script src="js/all.min.js"></script>
   <script>
     tailwind.config = {
       theme: {
@@ -31,6 +33,7 @@
 </head>
 
 <body class="font-manrope">
+  <!-- header start -->
   <header class="lg:w-[1170px] mx-auto px-5">
     <nav>
       <div class="navbar bg-base-100 my-5">
@@ -67,40 +70,50 @@
         </div>
       </div>
     </nav>
-    <div class="carousel w-full">
-      <div id="slide1" class="carousel-item relative w-full">
-        <img src="Images/1.png" class="w-full" />
-        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide4" class="btn btn-circle">❮</a>
-          <a href="#slide2" class="btn btn-circle">❯</a>
+    <div class="relative">
+      <div class="carousel w-full ">
+        <div id="slide1" class="carousel-item w-full">
+          <img src="Images/1.png" class="w-full " />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
         </div>
-      </div>
-      <div id="slide2" class="carousel-item relative w-full">
-        <img src="Images/1.png" class="w-full" />
-        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide1" class="btn btn-circle">❮</a>
-          <a href="#slide3" class="btn btn-circle">❯</a>
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="Images/1.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
         </div>
-      </div>
-      <div id="slide3" class="carousel-item relative w-full">
-        <img src="Images/1.png" class="w-full" />
-        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide2" class="btn btn-circle">❮</a>
-          <a href="#slide4" class="btn btn-circle">❯</a>
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="Images/1.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
         </div>
-      </div>
-      <div id="slide4" class="carousel-item relative w-full">
-        <img src="Images/1.png" class="w-full" />
-        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide3" class="btn btn-circle">❮</a>
-          <a href="#slide1" class="btn btn-circle">❯</a>
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="Images/1.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
         </div>
       </div>
     </div>
-    <!-- banner start -->
-
+    <div
+      class="mt-2 bg-black text-white p-8 lg:w-[566px] rounded-lg space-y-2 lg:space-y-4 lg:absolute lg:top-[440px] lg:right-[432px]">
+      <h2 class=" text-sm lg:text-xl font-extrabold ">Meet all the heroes from the field</h2>
+      <p class="text-sm font-normal">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat
+        dolor. Purus urna in sit nullam
+        proin.</p>
+    </div>
   </header>
+  <!-- header end -->
+  <!-- main start -->
   <main class="lg:w-[1170px] mx-auto px-5">
+    <!-- progress start -->
     <section class=" py-7  lg:py-20">
       <hr class="mb-8 lg:w-[1100px] mx-auto">
       <div>
@@ -137,6 +150,8 @@
         </div>
       </div>
     </section>
+    <!-- progress end -->
+    <!-- program section start -->
     <section>
       <hr class="mb-8 lg:w-[1100px] mx-auto">
       <div class="text-center">
@@ -183,6 +198,199 @@
                 natoque amet nunc morbi nulla.
               </p>
               <button class="py-2 px-4 bg-[#FF4240] rounded-lg">Register Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- program end -->
+    <section class=" py-7  lg:py-20">
+      <hr class="mb-8 lg:w-[1100px] mx-auto">
+      <div class="text-center">
+        <h2 class=" text-xl lg:text-4xl font-extrabold mb-6">Our New Products</h2>
+        <p class="text-sm font-medium lg:w-[607px] mx-auto">Dit amet consectetur. Condimentum dignissim adipiscing
+          aliquam turpis placerat dolor. Purus urna in sit nullam proin.
+        </p>
+      </div>
+      <hr class="mt-8 mb-5 lg:w-[1100px] mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <!-- card one -->
+        <div class="card lg:card-side border border-[#13131a39]">
+          <figure><img src="/Images/5.png" class="p-6" alt="Movie" />
+          </figure>
+          <div class="card-body">
+            <div class="flex justify-between">
+              <div class="flex gap-2 items-center">
+                <img src="Images/Frame (2).png" alt="">
+                <h2>5.0</h2>
+              </div>
+              <div class="flex gap-2 items-center">
+                <img src="Images/Frame (1).png" alt="">
+                <h2>20</h2>
+              </div>
+              <div class="flex gap-2 items-center">
+                <img src="Images/Frame (3).png" alt="">
+                <h2>200</h2>
+              </div>
+            </div>
+            <h2 class="card-title text-xl font-extrabold">World Cup Flags Football</h2>
+            <p class="text-sm font-medium">Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
+            <div class="flex flex-col lg:flex-row gap-5">
+              <h3 class="text-sm font-extrabold text-[#FF4240]">Price - $22.00</h3>
+              <div class="flex gap-2">
+                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                <p class="text-sm font-medium text-[#13131880]">Delivery Fee : Free</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card two -->
+        <div class="card lg:card-side border border-[#13131a39]">
+          <figure><img src="/Images/6.png" class="p-6" alt="Movie" />
+          </figure>
+          <div class="card-body">
+            <div class="flex justify-between">
+              <div class="flex gap-2 items-center">
+                <img src="Images/Frame (2).png" alt="">
+                <h2>5.0</h2>
+              </div>
+              <div class="flex gap-2 items-center">
+                <img src="Images/Frame (1).png" alt="">
+                <h2>20</h2>
+              </div>
+              <div class="flex gap-2 items-center">
+                <img src="Images/Frame (3).png" alt="">
+                <h2>200</h2>
+              </div>
+            </div>
+            <h2 class="card-title text-xl font-extrabold">World Cup Flags Football</h2>
+            <p class="text-sm font-medium">Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
+            <div class="flex flex-col lg:flex-row gap-5">
+              <h3 class="text-sm font-extrabold text-[#FF4240]">Price - $22.00</h3>
+              <div class="flex gap-2">
+                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                <p class="text-sm font-medium text-[#13131880]">Delivery Fee : Free</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card three -->
+        <div class="card lg:card-side border border-[#13131a39]">
+          <figure><img src="/Images/7.png" class="p-6" alt="Movie" />
+          </figure>
+          <div class="card-body">
+            <div class="flex justify-between">
+              <div class="flex gap-2 items-center">
+                <img src="Images/Frame (2).png" alt="">
+                <h2>5.0</h2>
+              </div>
+              <div class="flex gap-2 items-center">
+                <img src="Images/Frame (1).png" alt="">
+                <h2>20</h2>
+              </div>
+              <div class="flex gap-2 items-center">
+                <img src="Images/Frame (3).png" alt="">
+                <h2>200</h2>
+              </div>
+            </div>
+            <h2 class="card-title text-xl font-extrabold">Cap For Hockeys</h2>
+            <p class="text-sm font-medium">Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
+            <div class="flex flex-col lg:flex-row gap-5">
+              <h3 class="text-sm font-extrabold text-[#FF4240]">Price - $22.00</h3>
+              <div class="flex gap-2">
+                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                <p class="text-sm font-medium text-[#13131880]">Delivery Fee : Free</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card fore -->
+        <div class="card lg:card-side border border-[#13131a39]">
+          <figure><img src="/Images/8.png" class="p-6" alt="Movie" />
+          </figure>
+          <div class="card-body">
+            <div class="flex justify-between">
+              <div class="flex gap-2 items-center">
+                <img src="Images/Frame (2).png" alt="">
+                <h2>5.0</h2>
+              </div>
+              <div class="flex gap-2 items-center">
+                <img src="Images/Frame (1).png" alt="">
+                <h2>20</h2>
+              </div>
+              <div class="flex gap-2 items-center">
+                <img src="Images/Frame (3).png" alt="">
+                <h2>200</h2>
+              </div>
+            </div>
+            <h2 class="card-title text-xl font-extrabold">World Cup Flags Football</h2>
+            <p class="text-sm font-medium">Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
+            <div class="flex flex-col lg:flex-row gap-5">
+              <h3 class="text-sm font-extrabold text-[#FF4240]">Price - $22.00</h3>
+              <div class="flex gap-2">
+                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                <p class="text-sm font-medium text-[#13131880]">Delivery Fee : Free</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card five -->
+        <div class="card lg:card-side border border-[#13131a39]">
+          <figure><img src="/Images/9.png" class="p-6" alt="Movie" />
+          </figure>
+          <div class="card-body">
+            <div class="flex justify-between">
+              <div class="flex gap-2 items-center">
+                <img src="Images/Frame (2).png" alt="">
+                <h2>5.0</h2>
+              </div>
+              <div class="flex gap-2 items-center">
+                <img src="Images/Frame (1).png" alt="">
+                <h2>20</h2>
+              </div>
+              <div class="flex gap-2 items-center">
+                <img src="Images/Frame (3).png" alt="">
+                <h2>200</h2>
+              </div>
+            </div>
+            <h2 class="card-title text-xl font-extrabold">World Cup Flags Football</h2>
+            <p class="text-sm font-medium">Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
+            <div class="flex flex-col lg:flex-row gap-5">
+              <h3 class="text-sm font-extrabold text-[#FF4240]">Price - $22.00</h3>
+              <div class="flex gap-2">
+                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                <p class="text-sm font-medium text-[#13131880]">Delivery Fee : Free</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card six -->
+        <div class="card lg:card-side border border-[#13131a39]">
+          <figure><img src="/Images/10.png" class="p-6" alt="Movie" />
+          </figure>
+          <div class="card-body">
+            <div class="flex justify-between">
+              <div class="flex gap-2 items-center">
+                <img src="Images/Frame (2).png" alt="">
+                <h2>5.0</h2>
+              </div>
+              <div class="flex gap-2 items-center">
+                <img src="Images/Frame (1).png" alt="">
+                <h2>20</h2>
+              </div>
+              <div class="flex gap-2 items-center">
+                <img src="Images/Frame (3).png" alt="">
+                <h2>200</h2>
+              </div>
+            </div>
+            <h2 class="card-title text-xl font-extrabold">World Cup Flags Football</h2>
+            <p class="text-sm font-medium">Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
+            <div class="flex flex-col lg:flex-row gap-5">
+              <h3 class="text-sm font-extrabold text-[#FF4240]">Price - $22.00</h3>
+              <div class="flex gap-2">
+                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                <p class="text-sm font-medium text-[#13131880]">Delivery Fee : Free</p>
+              </div>
             </div>
           </div>
         </div>
